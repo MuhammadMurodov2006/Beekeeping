@@ -1,3 +1,5 @@
-streamlit 
 ultralytics
-PIL
+torch
+torchvision
+streamlit
+Pillow
