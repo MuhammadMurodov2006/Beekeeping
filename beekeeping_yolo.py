@@ -1,7 +1,11 @@
 import streamlit as st
+import os
 from ultralytics import YOLO
 from PIL import Image
 import numpy as np
+
+# Set environment variable to avoid config directory warning
+os.environ['YOLO_CONFIG_DIR'] = '/tmp'
 
 # Load your YOLOv8 model
 MODEL_PATH = "my_model_v8/my_model_v8.pt"  
@@ -27,7 +31,7 @@ if uploaded_file is not None:
     # Show detection details
     st.subheader("Detections:")
     for box in results[0].boxes:
-        cls_id = int(box.cls.cpu().numpy())  # class id
-        conf = float(box.conf.cpu().numpy())  # confidence
+        # Fix NumPy deprecation warnings by properly extracting scalar values
+        cls_id = int(box.cls.cpu().numpy().item())  # Use .item() to extract scalar
+        conf = float(box.conf.cpu().numpy().item())  # Use .item() to extract scalar
         st.write(f"Class: {model.names[cls_id]} | Confidence: {conf:.2f}")
-
