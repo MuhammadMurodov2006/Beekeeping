@@ -1,11 +1,13 @@
 import streamlit as st
 import os
+
+# Fix the Ultralytics config directory warning
+os.environ['YOLO_CONFIG_DIR'] = '/tmp'
+
 from ultralytics import YOLO
 from PIL import Image
 import numpy as np
 
-# Set environment variable to avoid config directory warning
-os.environ['YOLO_CONFIG_DIR'] = '/tmp'
 
 # Load your YOLOv8 model
 MODEL_PATH = "my_model_v8/my_model_v8.pt"  
