@@ -14,7 +14,7 @@ uploaded_file = st.file_uploader("Upload a beehive image", type=["jpg", "jpeg", 
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file).convert("RGB")
-    st.image(image, caption="Uploaded Image", 'width'=stretch)
+    st.image(image, caption="Uploaded Image", width='stretch')
 
     img_array = np.array(image)
 
@@ -25,7 +25,7 @@ if uploaded_file is not None:
         # Show detection image for each result
         result_img = result.plot()
         if result_img is not None and result_img.shape[0] > 0 and result_img.shape[1] > 0:
-            st.image(result_img, caption="Detection Results", 'width'=stretch)
+            st.image(result_img, caption="Detection Results", width='stretch')
 
         # Show detection details for each result
         for box in result.boxes:
