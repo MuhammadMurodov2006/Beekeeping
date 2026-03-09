@@ -53,8 +53,8 @@ Clone the repository:
 ```bash
 git clone https://github.com/MuhammadMurodov2006/Beekeeping.git
 cd Beekeeping
-
 ---
+```
 
 ## Create a Virtual Environment (optional but recommended)
 ```
