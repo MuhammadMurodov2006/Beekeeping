@@ -1,7 +1,10 @@
 # Beekeeping YOLOv8 Detection App
 
 This project is a **Streamlit web app** that uses **YOLOv8 (Ultralytics)** to detect beehive types (and optionally bees) in images and videos.  
-It is designed for **beekeeping analysis**, making it easier to monitor bee activity using modern computer vision techniques.
+It is designed for **beekeeping analysis**, making it easier to monitor bee activity 
+using modern computer vision techniques <img width="1912" height="988" alt="Screenshot from 2026-03-09 16-32-25" src="https://github.com/user-attachments/assets/8e767e4f-05b7-49e1-b11a-eae64a32333c" />
+<img width="1912" height="988" alt="Screenshot from 2026-03-09 16-32-18" src="https://github.com/user-attachments/assets/24fcfd37-d05e-457b-b9e0-59733ab66dc5" />
+.
 
 ---
 
