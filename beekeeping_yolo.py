@@ -21,14 +21,14 @@ uploaded_file = st.file_uploader("Upload a beehive image", type=["jpg", "jpeg", 
 if uploaded_file is not None:
     # Load and display image
     image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image", use_container_width=True)
+    st.image(image, caption="Uploaded Image", width=True)
 
     # Run detection
     results = model.predict(image, device="cpu")
 
     # Show image with detections
     result_img = results[0].plot()  # numpy array with boxes drawn
-    st.image(result_img, caption="Detection Results", use_container_width=True)
+    st.image(result_img, caption="Detection Results", width=True)
 
     # Show detection details
     st.subheader("Detections:")
