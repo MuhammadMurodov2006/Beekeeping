@@ -85,10 +85,10 @@ streamlit run beekeeping_yolo.py
 ---
 # Example Usage
 
--Upload a beehive image or video
--The YOLOv8 model processes the input
--The system detects hive components
--Results appear with bounding boxes and labels
+- Upload a beehive image or video
+- The YOLOv8 model processes the input
+- The system detects hive components
+- Results appear with bounding boxes and labels
 ---
 
 # NOTE: Model training is actively being refined
