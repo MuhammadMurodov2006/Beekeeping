@@ -91,4 +91,4 @@ streamlit run beekeeping_yolo.py
 - Results appear with bounding boxes and labels
 ---
 
-# NOTE: Model training is actively being refined
+# NOTE: Model training is being refined
